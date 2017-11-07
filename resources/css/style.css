@@ -1,0 +1,103 @@
+/* Global Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #4A4A4A;
+  font-family: "prompt";
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+
+/* Header and Navbar */
+
+header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+}
+
+.navbar {
+  display: flex;
+  height: 4rem;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: #9B9B9B;
+}
+
+nav a:hover {
+  color: #4A4A4A;
+  cursor: pointer;
+}
+
+nav a:active {
+  color: #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #9B9B9B;
+}
+
+.logo img {
+  height: 2rem;
+  width: auto;
+}
+
+.logo span {
+  font-weight: 700;
+  color: #4A4A4A;
+}
+
+.mobile-nav {
+  display: none;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 750px) {
+
+  .main-nav, .logo {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    width: 100%;
+
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-nav a {
+    padding-left: 0;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+}
+
+/* Jumbotron */
