@@ -11,6 +11,36 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #4D92DF;
+  transition: .3s ease-in;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #000;
+}
 
 /* Header and Navbar */
 
@@ -35,6 +65,7 @@ nav ul li {
 
 nav a {
   text-decoration: none;
+  font-size: 1rem;
   padding-left: 1rem;
   color: #9B9B9B;
 }
@@ -46,6 +77,10 @@ nav a:hover {
 
 nav a:active {
   color: #000;
+}
+
+.navbar p {
+  margin-bottom: 0;
 }
 
 .logo {
@@ -224,5 +259,122 @@ button:active {
     margin: 2rem 1rem;
     text-align: center;
   }
+
+}
+
+/* Articles Section */
+
+.articles {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+}
+
+.lead-article {
+  width: 60%;
+  margin: 2.5rem 0 0 2rem;
+}
+
+.lead-article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.lead-article p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.85rem;
+}
+
+.sub-articles {
+  display: flex;
+  width: 40%;
+  border-left: 1px solid #efefef;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #efefef;
+  transition: all .175s ease-in;
+}
+
+.story:hover {
+  background-color: #efefef;
+}
+
+.story img {
+  margin-right: 1rem;
+}
+
+#orientation-mobile,
+#on-campus-mobile,
+#lecture-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .articles {
+      display: block;
+    }
+
+    .lead-article {
+      width: 100%;
+      margin: 2.5rem 0;
+    }
+
+    .lead-article h2,
+    .lead-article p,
+    .lead-article span {
+      padding: 0 1.5rem;
+    }
+
+    .sub-articles {
+      width: 100%;
+      margin: 2.5rem 0 0 0;
+      border-top: 1px solid #efefef;
+      border-bottom: none;
+      padding-top: 0;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    .lead-article {
+      display: none;
+    }
+
+    .sub-articles {
+      margin: 0;
+      border-bottom: 1px solid #efefef;
+    }
+
+    .story {
+      display: block;
+      padding: 1rem 1rem 1.5rem 1rem;
+      border: none;
+    }
+
+    #orientation,
+    #on-campus,
+    #lecture {
+      display: none;
+    }
+
+    #orientation-mobile,
+    #on-campus-mobile,
+    #lecture-mobile {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+
+    }
 
 }
