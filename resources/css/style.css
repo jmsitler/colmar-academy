@@ -323,10 +323,6 @@ button:active {
   border-bottom: .5rem solid #4D92DF;
 }
 
-.story img {
-  margin-right: 1rem;
-}
-
 #orientation-mobile,
 #on-campus-mobile,
 #lecture-mobile {
@@ -393,12 +389,10 @@ button:active {
     #lecture-mobile {
       display: block;
       width: 100%;
-      margin-bottom: 2rem;
-
     }
 }
 
-/*Start Learning*/
+/* Start Learning */
 
 .courses {
   display: flex;
@@ -413,7 +407,7 @@ button:active {
 }
 
 .course {
-  width: 30%;
+  width: 32%;
   display: flex;
   margin-bottom: 2rem;
 }
@@ -427,6 +421,7 @@ button:active {
   width: auto;
   transition: all .15s ease-in;
   position: relative;
+  border-bottom: .5rem solid transparent;
 }
 
 .course-info img:hover {
@@ -467,7 +462,7 @@ button:active {
 
   .course {
     width: 100%;
-    margin-bottom: 0.5rem;;
+    margin-bottom: 0.5rem;
   }
 
 }
