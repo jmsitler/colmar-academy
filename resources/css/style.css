@@ -42,12 +42,23 @@ a:hover {
   color: #000;
 }
 
+.tag, .story p {
+  color: #b9b9b9;
+}
+
 /* Header and Navbar */
 
-header {
+.cd-auto-hide-header {
   width: 100%;
   background-color: #fff;
   position: fixed;
+  transition: transform .5s .1s;
+  top: 0;
+  left: 0;
+}
+
+.cd-auto-hide-header.is-hidden {
+  transform: translateY(-100%);
 }
 
 .navbar {
@@ -58,6 +69,7 @@ header {
   align-items: center;
   margin: 0 1.5rem;
 }
+
 
 nav ul li {
   display: inline-block;
@@ -137,7 +149,8 @@ nav a:active {
 
 /* Jumbotron */
 
-.jumbotron {
+.jumbotron,
+.start-learning {
   background: #D8D8D8;
   width: 100%;
   padding: 0;
@@ -377,4 +390,39 @@ button:active {
 
     }
 
+}
+
+/*Start Learning*/
+
+.start-learning {
+}
+
+.courses {
+  display: flex;
+  padding: 2rem 4.5rem;
+  with: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.start-learning h2 {
+  text-align: center;
+}
+
+.course {
+  width: 30%;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.course-info {
+  background-color: #fff;
+}
+
+.course-info img {
+  width: 100%;
+}
+
+.story-info {
+  padding: 1rem;
 }
