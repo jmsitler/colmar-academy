@@ -151,7 +151,7 @@ nav a:active {
 
 .jumbotron,
 .start-learning {
-  background: #D8D8D8;
+  background: #EAEBEC;
   width: 100%;
   padding: 0;
   padding-top: 4rem;
@@ -277,7 +277,8 @@ button:active {
 
 /* Articles Section */
 
-.articles {
+.articles,
+.videos {
   background-color: #fff;
   width: 100%;
   display: flex;
@@ -288,11 +289,12 @@ button:active {
   margin: 2.5rem 0 0 2rem;
 }
 
-.lead-article img {
+.lead-article img, video {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
 }
+
 
 .lead-article p {
   margin-bottom: 2rem;
@@ -314,11 +316,11 @@ button:active {
   align-items: center;
   padding: 1.5rem;
   border-bottom: 1px solid #efefef;
-  transition: all .175s ease-in;
+  transition: all .15s ease-in;
 }
 
 .story:hover {
-  background-color: #efefef;
+  border-bottom: .5rem solid #4D92DF;
 }
 
 .story img {
@@ -343,6 +345,7 @@ button:active {
     }
 
     .lead-article h2,
+    .lead-article h3,
     .lead-article p,
     .lead-article span {
       padding: 0 1.5rem;
@@ -360,8 +363,12 @@ button:active {
 
 @media only screen and (max-width: 750px) {
 
-    .lead-article {
+    #hide {
       display: none;
+    }
+
+    .video {
+      display: block;
     }
 
     .sub-articles {
@@ -389,13 +396,9 @@ button:active {
       margin-bottom: 2rem;
 
     }
-
 }
 
 /*Start Learning*/
-
-.start-learning {
-}
 
 .courses {
   display: flex;
@@ -417,12 +420,71 @@ button:active {
 
 .course-info {
   background-color: #fff;
+  overflow: hidden;
 }
 
 .course-info img {
-  width: 100%;
+  width: auto;
+  transition: all .15s ease-in;
+  position: relative;
+}
+
+.course-info img:hover {
+  border-bottom: .5rem solid #4D92DF;
 }
 
 .story-info {
-  padding: 1rem;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .course {
+    width: 48%;
+  }
+}
+
+.thesis {
+  border-bottom: 1px solid #efefef;
+}
+
+.thesis h2  {
+  text-align: center;
+  margin: 3rem;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .courses {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  .course-info {
+    width: 100%;
+  }
+
+  .course {
+    width: 100%;
+    margin-bottom: 0.5rem;;
+  }
+
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #efefef;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 750px) {
+  footer nav a{
+    display: none;
+  }
 }
