@@ -418,7 +418,8 @@ button:active {
 }
 
 .course-info img {
-  width: auto;
+  width: 100%;
+  height: auto;
   transition: all .15s ease-in;
   position: relative;
   border-bottom: .5rem solid transparent;
